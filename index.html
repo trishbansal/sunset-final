@@ -1,0 +1,120 @@
+<style>
+  body {
+    background-color: rgba(176, 234, 252, 0.9);
+  }
+
+
+  .square {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: calc(50vw - 200px);
+    top: 50vh;
+    border-radius: 2%;
+    background-image: radial-gradient(rgb(65, 19, 0),
+        rgb(88, 47, 0));
+  }
+
+  .top {
+    content: "";
+    width: 370px;
+    height: 140px;
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    z-index: 1;
+    background-image: linear-gradient(rgb(128, 0, 156) 0%,
+        rgb(255, 69, 0) 40%,
+        rgb(255, 111, 0) 70%,
+        rgb(255, 185, 0) 100%);
+    filter:
+      brightness(0.9) blur(1px);
+  }
+
+  .bottom {
+    content: "";
+    width: 370px;
+    height: 80px;
+    position: absolute;
+    top: 61%;
+    left: 4%;
+    z-index: 1;
+    background-image: linear-gradient(rgb(255, 185, 0) 0%,
+        /*       rgb(255, 111, 0) 40%, */
+        rgb(255, 118, 0) 10%,
+        rgb(255, 63, 0) 20%,
+        rgb(97, 52, 255) 60%,
+        rgb(0, 52, 255) 80%,
+        rgb(75, 0, 255) 100%);
+    filter:
+      brightness(0.7) blur(1px);
+  }
+
+  .boat {
+    content: "";
+    width: 44px;
+    height: 0px;
+    position: absolute;
+    top: 52%;
+    left: 54%;
+    z-index: 1;
+    border-top: 24px solid #300000;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+
+  .boat_shadow {
+    content: "";
+    width: 44px;
+    height: 0px;
+    position: absolute;
+    top: 60%;
+    left: 54%;
+    z-index: 1;
+    border-color: transparent;
+    border-bottom: 28px solid #300000;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    filter:
+      blur(5px);
+  }
+
+  .sail {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 36%;
+    left: 66%;
+    z-index: 1;
+    border-color: transparent;
+    border-top: 20px solid transparent;
+    border-left: 25px solid #300000;
+    border-bottom: 20px solid transparent;
+    \
+
+  }
+
+  .small_sail {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 41%;
+    left: 61%;
+    z-index: 1;
+    border-color: transparent;
+    border-top: 13px solid transparent;
+    border-right: 17px solid #300000;
+    border-bottom: 14px solid transparent;
+  }
+</style>
+
+<div class="square">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="boat"></div>
+  <div class="boat_shadow"></div>
+  <div class="sail"></div>
+  <div class="small_sail"></div>
+</div>
